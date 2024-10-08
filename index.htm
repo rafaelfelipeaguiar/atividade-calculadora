@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculadora de Soma Simples</title>
+    <script>
+        function calcularSoma() {
+            var num1 = parseFloat(document.getElementById('numero1').value);
+            var num2 = parseFloat(document.getElementById('numero2').value);
+            var soma = num1 + num2;
+            alert('A soma é: ' + soma);
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Calculadora de Soma Simples</h1>
+
+    <label for="numero1">Número 1:</label>
+    <input type="text" id="numero1">
+    <br><br>
+
+    <label for="numero2">Número 2:</label>
+    <input type="text" id="numero2">
+    <br><br>
+
+    <button onclick="calcularSoma()">Calcular</button>
+
+</body>
+</html>
